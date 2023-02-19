@@ -1,0 +1,36 @@
+{
+  "extension": {
+	  "name": "Doom",
+	  "version": "1.0",
+	  "description": "---",
+	  "author": "PM7DOOM",
+	  "email": "---",
+	  "product-url": "---e",
+	  "provider": "---",
+	  "license": "GPL",
+	  "extension-version-requirements": {
+		  "minimum-version": "1.2"
+    }
+  },
+  "locations": [
+    {
+		"location": "details-pane",
+		"relevant-types": ["gateways"],
+		"ui-element": {
+			"type": "tab",
+			"caption": "Doom",
+			"tooltip": "Doom Tip.",
+			"action": {
+				"details-level": "full",
+				"method": "get",
+				"trigger-id": "gateways-details-pane",
+				"url": "doom.htm"
+		}
+	  }
+    }
+
+  ],
+	"requested-permissions": {
+		"client": ["get-read-only-session", "run-read-only-commands"]
+  }
+}

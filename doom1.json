@@ -1,0 +1,43 @@
+{
+  "extension": {
+	  "name": "Play Doom",
+	  "version": "1.0",
+	  "description": "---",
+	  "author": "PM7DOOM",
+	  "email": "---",
+	  "product-url": "---",
+	  "provider": "---",
+	  "license": "GPL",
+	  "extension-version-requirements": {
+		  "minimum-version": "1.2"
+    }
+  },
+  "locations": [
+    {
+		"location": "toolbar",
+		"relevant-types": ["access-policy"],
+		"ui-element": {
+			"type": "tab",
+			"caption": "Play Doom",
+			"tooltip": "Play Doom Tip",
+			"action": {
+				"details-level": "full",
+				"method": "get",
+				"trigger-id": "gateways-details-pane",
+				"url": "doom1.htm",
+				"browser-window": {
+					"width": "680",
+					"height": "440",
+					"min-width": "680",
+					"min-height": "440"
+
+				}
+
+		}
+	  }
+    }
+  ],
+	"requested-permissions": {
+		"client": ["get-read-only-session", "run-read-only-commands"]
+  }
+}
